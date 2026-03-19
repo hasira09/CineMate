@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interstellar - CineMate</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🎬</div>
+        Cine<em>Mate</em>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="tv-shows.html">TV Shows</a></li>
+        <li><a href="favourites.html">Favourites</a></li>
+      </ul>
+      <div class="nav-search">
+        <span>🔍</span>
+        <input type="text" placeholder="Search..." />
+      </div>
+    </div>
+  </nav>
+
+
+  <main>
+
+    <!-- Dark hero band -->
+    <div class="detail-hero">
+      <div class="container">
+
+        <!-- Back link -->
+        <a href="movies.html" style="font-size:0.82rem; color:var(--text-muted); display:inline-block; margin-bottom:1.5rem;">
+          ← Back to Movies
+        </a>
+
+        <div class="detail-layout">
+
+          <!-- Poster -->
+          <div class="detail-poster">
+            <!-- Week 5: Replace emoji with <img> from TMDB API -->
+            🎬
+          </div>
+
+          <!-- Info -->
+          <div>
+            <div class="detail-genres">
+              <span class="genre-tag">Sci-Fi</span>
+              <span class="genre-tag">Adventure</span>
+              <span class="genre-tag">Drama</span>
+            </div>
+
+            <h1 class="detail-title">Interstellar</h1>
+            <p class="detail-tagline">"Mankind was born on Earth. It was never meant to die here."</p>
+
+            <div class="detail-meta">
+              <div class="detail-rating">⭐ 8.7 / 10</div>
+              <span>📅 <strong>2014</strong></span>
+              <span>⏱ <strong>169 min</strong></span>
+              <span>🔞 <strong>PG-13</strong></span>
+            </div>
+
+            <p class="detail-overview">
+              A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival. When Earth's future is threatened by catastrophic blight and famine, a former NASA pilot leads a mission beyond our galaxy to discover whether mankind has a future among the stars.
+            </p>
+
+            <div class="detail-actions">
+              <a href="#" class="btn-primary">▶ Watch Trailer</a>
+              <button class="btn-outline" id="fav-btn">♡ Add to Favourites</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <!-- Movie Info -->
+      <h2 class="section-title" style="margin-bottom:1rem;">Movie <em>Details</em></h2>
+
+      <!--
+        NOTE TO STUDENTS:
+        Week 5 — This info will be fetched from the TMDB API dynamically.
+        For now it is hardcoded static HTML.
+      -->
+      <div class="info-grid">
+        <div class="info-item">
+          <div class="info-label">Director</div>
+          <div class="info-value">Christopher Nolan</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Writer</div>
+          <div class="info-value">Jonathan Nolan</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Release Date</div>
+          <div class="info-value">Nov 7, 2014</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Runtime</div>
+          <div class="info-value">2h 49min</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Budget</div>
+          <div class="info-value">$165 million</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Box Office</div>
+          <div class="info-value">$773 million</div>
+        </div>
+      </div>
+
+
+      <!-- Cast -->
+      <h2 class="section-title" style="margin-bottom:1rem;">Top <em>Cast</em></h2>
+
+      <!--
+        NOTE TO STUDENTS:
+        Week 5 — Cast will be fetched from TMDB's /credits endpoint.
+      -->
+      <div class="cast-grid" style="margin-bottom:2.5rem;">
+        <div class="cast-card">
+          <div class="cast-photo">👤</div>
+          <div class="cast-name">Matthew McConaughey</div>
+          <div class="cast-role">Cooper</div>
+        </div>
+        <div class="cast-card">
+          <div class="cast-photo">👤</div>
+          <div class="cast-name">Anne Hathaway</div>
+          <div class="cast-role">Brand</div>
+        </div>
+        <div class="cast-card">
+          <div class="cast-photo">👤</div>
+          <div class="cast-name">Jessica Chastain</div>
+          <div class="cast-role">Murph (adult)</div>
+        </div>
+        <div class="cast-card">
+          <div class="cast-photo">👤</div>
+          <div class="cast-name">Michael Caine</div>
+          <div class="cast-role">Prof. Brand</div>
+        </div>
+        <div class="cast-card">
+          <div class="cast-photo">👤</div>
+          <div class="cast-name">Matt Damon</div>
+          <div class="cast-role">Dr. Mann</div>
+        </div>
+        <div class="cast-card">
+          <div class="cast-photo">👤</div>
+          <div class="cast-name">Mackenzie Foy</div>
+          <div class="cast-role">Murph (young)</div>
+        </div>
+      </div>
+
+
+      <!-- You Might Also Like -->
+      <div class="section-header">
+        <h2 class="section-title">You Might <em>Also Like</em></h2>
+        <a href="movies.html" class="section-link">See more →</a>
+      </div>
+
+      <div class="movies-grid">
+        <div class="card">
+          <div class="card-poster">
+            <div class="poster-placeholder">🎬<small>No Image</small></div>
+            <button class="btn-fav">♡</button>
+            <div class="card-overlay"><a href="detail.html" class="btn-details">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Inception</div>
+            <div class="card-meta"><span>2010</span><span>Sci-Fi</span></div>
+            <span class="rating high">⭐ 8.8</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-poster">
+            <div class="poster-placeholder">🎬<small>No Image</small></div>
+            <button class="btn-fav">♡</button>
+            <div class="card-overlay"><a href="detail.html" class="btn-details">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">The Martian</div>
+            <div class="card-meta"><span>2015</span><span>Sci-Fi</span></div>
+            <span class="rating high">⭐ 8.0</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-poster">
+            <div class="poster-placeholder">🎬<small>No Image</small></div>
+            <button class="btn-fav">♡</button>
+            <div class="card-overlay"><a href="detail.html" class="btn-details">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Arrival</div>
+            <div class="card-meta"><span>2016</span><span>Sci-Fi</span></div>
+            <span class="rating high">⭐ 7.9</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-poster">
+            <div class="poster-placeholder">🎬<small>No Image</small></div>
+            <button class="btn-fav">♡</button>
+            <div class="card-overlay"><a href="detail.html" class="btn-details">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Gravity</div>
+            <div class="card-meta"><span>2013</span><span>Sci-Fi</span></div>
+            <span class="rating mid">⭐ 7.7</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Cine<em>Mate</em></div>
+          <p class="footer-desc">A movie and TV show discovery app built as part of the Web Architectures course.</p>
+        </div>
+        <div>
+          <div class="footer-col-title">Pages</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="tv-shows.html">TV Shows</a></li>
+            <li><a href="favourites.html">Favourites</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Resources</div>
+          <ul class="footer-links">
+            <li><a href="https://github.com" target="_blank">GitHub Repo</a></li>
+            <li><a href="https://www.themoviedb.org/" target="_blank">TMDB API</a></li>
+            <li><a href="https://developer.mozilla.org" target="_blank">MDN Docs</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 CineMate - Web Architectures Project</span>
+        <span class="footer-note">⭐ Hasira</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Favourites - CineMate</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🎬</div>
+        Cine<em>Mate</em>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="tv-shows.html">TV Shows</a></li>
+        <li><a href="favourites.html" class="active">Favourites</a></li>
+      </ul>
+      <div class="nav-search">
+        <span>🔍</span>
+        <input type="text" placeholder="Search..." />
+      </div>
+    </div>
+  </nav>
+
+
+  <main>
+    <div class="container">
+
+      <div class="page-header">
+        <h1>♥ My <em>Favourites</em></h1>
+        <p>Your saved movies and TV shows. Stored in your browser using localStorage.</p>
+      </div>
+
+      <!--
+        NOTE TO STUDENTS — Week 4:
+        This entire page will be powered by localStorage.
+        - If localStorage is empty → show the empty-state block below
+        - If localStorage has items → generate cards using a JS loop
+        The static cards below are placeholders for the HTML/CSS phase only.
+
+        To toggle the empty state, you can uncomment the block below
+        and remove the .movies-grid section.
+      -->
+
+      <!-- EMPTY STATE (uncomment in Week 4 when list is empty) -->
+      <!--
+      <div class="empty-state">
+        <div class="icon">♡</div>
+        <h2>No favourites yet</h2>
+        <p>Browse movies and TV shows and click ♡ to save them here.</p>
+        <a href="movies.html" class="btn-primary">Browse Movies</a>
+      </div>
+      -->
+
+      <!-- FAVOURITES LIST (static placeholder) -->
+      <div class="movies-grid" id="favourites-grid">
+
+        <div class="card">
+          <div class="card-poster">
+            <div class="poster-placeholder">🎬<small>No Image</small></div>
+            <button class="btn-fav active">♥</button>
+            <div class="card-overlay"><a href="detail.html" class="btn-details">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Interstellar</div>
+            <div class="card-meta"><span>2014</span><span>Sci-Fi</span></div>
+            <span class="rating high">⭐ 8.7</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-poster">
+            <div class="poster-placeholder">🎬<small>No Image</small></div>
+            <button class="btn-fav active">♥</button>
+            <div class="card-overlay"><a href="detail.html" class="btn-details">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">The Dark Knight</div>
+            <div class="card-meta"><span>2008</span><span>Action</span></div>
+            <span class="rating high">⭐ 9.0</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-poster">
+            <div class="poster-placeholder">📺<small>No Image</small></div>
+            <button class="btn-fav active">♥</button>
+            <div class="card-overlay"><a href="detail.html" class="btn-details">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Breaking Bad</div>
+            <div class="card-meta"><span>2008–2013</span><span>Crime</span></div>
+            <span class="rating high">⭐ 9.5</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-poster">
+            <div class="poster-placeholder">🎬<small>No Image</small></div>
+            <button class="btn-fav active">♥</button>
+            <div class="card-overlay"><a href="detail.html" class="btn-details">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Parasite</div>
+            <div class="card-meta"><span>2019</span><span>Thriller</span></div>
+            <span class="rating high">⭐ 8.5</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Clear all button -->
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <button class="btn-outline" id="clear-btn">🗑 Clear All Favourites</button>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Cine<em>Mate</em></div>
+          <p class="footer-desc">A movie and TV show discovery app built as part of the Web Architectures course.</p>
+        </div>
+        <div>
+          <div class="footer-col-title">Pages</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="tv-shows.html">TV Shows</a></li>
+            <li><a href="favourites.html">Favourites</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Resources</div>
+          <ul class="footer-links">
+            <li><a href="https://github.com" target="_blank">GitHub Repo</a></li>
+            <li><a href="https://www.themoviedb.org/" target="_blank">TMDB API</a></li>
+            <li><a href="https://developer.mozilla.org" target="_blank">MDN Docs</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 CineMate - Web Architectures Project</span>
+        <span class="footer-note">⭐ Hasira</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

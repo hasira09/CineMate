@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movies - CineMate</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🎬</div>
+        Cine<em>Mate</em>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html" class="active">Movies</a></li>
+        <li><a href="tv-shows.html">TV Shows</a></li>
+        <li><a href="favourites.html">Favourites</a></li>
+      </ul>
+      <div class="nav-search">
+        <span>🔍</span>
+        <input type="text" placeholder="Search..." />
+      </div>
+    </div>
+  </nav>
+
+
+  <main>
+    <div class="container">
+
+      <div class="page-header">
+        <h1>🎬 All <em>Movies</em></h1>
+        <p>Browse our full collection. Use the filters to find exactly what you're looking for.</p>
+      </div>
+
+      <!-- Search & Filter -->
+      <div class="search-section" style="margin: 0 -1.5rem; padding: 1.25rem 1.5rem; margin-bottom: 1.5rem;">
+        <div class="search-row">
+          <div class="search-input-wrap">
+            <span>🔍</span>
+            <input type="text" placeholder="Search movies..." />
+          </div>
+          <select class="filter">
+            <option>All Genres</option>
+            <option>Action</option><option>Comedy</option><option>Drama</option>
+            <option>Horror</option><option>Sci-Fi</option><option>Thriller</option>
+            <option>Animation</option>
+          </select>
+          <select class="filter">
+            <option>All Years</option>
+            <option>2024</option><option>2023</option><option>2022</option><option>2021</option>
+          </select>
+          <select class="filter">
+            <option>Sort By</option>
+            <option>Rating ↓</option>
+            <option>Year (Newest)</option>
+            <option>Title A–Z</option>
+          </select>
+          <button class="btn-search">Search</button>
+        </div>
+      </div>
+
+      <!-- Genre Pills -->
+      <div class="genre-pills">
+        <button class="pill active">🎬 All</button>
+        <button class="pill">💥 Action</button>
+        <button class="pill">😂 Comedy</button>
+        <button class="pill">🎭 Drama</button>
+        <button class="pill">👻 Horror</button>
+        <button class="pill">🚀 Sci-Fi</button>
+        <button class="pill">🔪 Thriller</button>
+        <button class="pill">🧸 Animation</button>
+      </div>
+
+      <!-- Movies Grid -->
+      <!--
+        NOTE TO STUDENTS:
+        Week 1 — Generate these cards with a JS loop from a data array.
+        Week 2 — Add real-time search & genre filtering with array methods.
+        Week 5 — Fetch real movie data from the TMDB API.
+      -->
+      <div class="movies-grid" id="movies-grid">
+
+        <div class="card">
+          <div class="card-poster">
+            <div class="poster-placeholder">🎬<small>No Image</small></div>
+            <span class="badge">Trending</span>
+            <button class="btn-fav">♡</button>
+            <div class="card-overlay"><a href="detail.html" class="btn-details">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Dune: Part Two</div>
+            <div class="card-meta"><span>2024</span><span>Sci-Fi</span></div>
+            <span class="rating high">⭐ 8.5</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-poster">
+            <div class="poster-placeholder">🎬<small>No Image</small></div>
+            <span class="badge top">Top</span>
+            <button class="btn-fav">♡</button>
+            <div class="card-overlay"><a href="detail.html" class="btn-details">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Oppenheimer</div>
+            <div class="card-meta"><span>2023</span><span>Drama</span></div>
+            <span class="rating high">⭐ 8.9</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-poster">
+            <div class="poster-placeholder">🎬<small>No Image</small></div>
+            <button class="btn-fav">♡</button>
+            <div class="card-overlay"><a href="detail.html" class="btn-details">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">The Dark Knight</div>
+            <div class="card-meta"><span>2008</span><span>Action</span></div>
+            <span class="rating high">⭐ 9.0</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-poster">
+            <div class="poster-placeholder">🎬<small>No Image</small></div>
+            <button class="btn-fav">♡</button>
+            <div class="card-overlay"><a href="detail.html" class="btn-details">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Parasite</div>
+            <div class="card-meta"><span>2019</span><span>Thriller</span></div>
+            <span class="rating high">⭐ 8.5</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-poster">
+            <div class="poster-placeholder">🎬<small>No Image</small></div>
+            <span class="badge new">New</span>
+            <button class="btn-fav">♡</button>
+            <div class="card-overlay"><a href="detail.html" class="btn-details">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Furiosa</div>
+            <div class="card-meta"><span>2024</span><span>Action</span></div>
+            <span class="rating mid">⭐ 7.9</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-poster">
+            <div class="poster-placeholder">🎬<small>No Image</small></div>
+            <button class="btn-fav">♡</button>
+            <div class="card-overlay"><a href="detail.html" class="btn-details">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Inception</div>
+            <div class="card-meta"><span>2010</span><span>Sci-Fi</span></div>
+            <span class="rating high">⭐ 8.8</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-poster">
+            <div class="poster-placeholder">🎬<small>No Image</small></div>
+            <button class="btn-fav">♡</button>
+            <div class="card-overlay"><a href="detail.html" class="btn-details">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">The Shawshank Redemption</div>
+            <div class="card-meta"><span>1994</span><span>Drama</span></div>
+            <span class="rating high">⭐ 9.3</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-poster">
+            <div class="poster-placeholder">🎬<small>No Image</small></div>
+            <button class="btn-fav">♡</button>
+            <div class="card-overlay"><a href="detail.html" class="btn-details">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Whiplash</div>
+            <div class="card-meta"><span>2014</span><span>Drama</span></div>
+            <span class="rating high">⭐ 8.5</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-poster">
+            <div class="poster-placeholder">🎬<small>No Image</small></div>
+            <button class="btn-fav">♡</button>
+            <div class="card-overlay"><a href="detail.html" class="btn-details">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Hereditary</div>
+            <div class="card-meta"><span>2018</span><span>Horror</span></div>
+            <span class="rating mid">⭐ 7.3</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-poster">
+            <div class="poster-placeholder">🎬<small>No Image</small></div>
+            <span class="badge new">New</span>
+            <button class="btn-fav">♡</button>
+            <div class="card-overlay"><a href="detail.html" class="btn-details">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Inside Out 2</div>
+            <div class="card-meta"><span>2024</span><span>Animation</span></div>
+            <span class="rating mid">⭐ 7.6</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-poster">
+            <div class="poster-placeholder">🎬<small>No Image</small></div>
+            <button class="btn-fav">♡</button>
+            <div class="card-overlay"><a href="detail.html" class="btn-details">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">La La Land</div>
+            <div class="card-meta"><span>2016</span><span>Romance</span></div>
+            <span class="rating mid">⭐ 8.0</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-poster">
+            <div class="poster-placeholder">🎬<small>No Image</small></div>
+            <button class="btn-fav">♡</button>
+            <div class="card-overlay"><a href="detail.html" class="btn-details">View Details</a></div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Get Out</div>
+            <div class="card-meta"><span>2017</span><span>Horror</span></div>
+            <span class="rating mid">⭐ 7.7</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Cine<em>Mate</em></div>
+          <p class="footer-desc">A movie and TV show discovery app built as part of the Web Architectures course.</p>
+        </div>
+        <div>
+          <div class="footer-col-title">Pages</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="tv-shows.html">TV Shows</a></li>
+            <li><a href="favourites.html">Favourites</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Resources</div>
+          <ul class="footer-links">
+            <li><a href="https://github.com" target="_blank">GitHub Repo</a></li>
+            <li><a href="https://www.themoviedb.org/" target="_blank">TMDB API</a></li>
+            <li><a href="https://developer.mozilla.org" target="_blank">MDN Docs</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 CineMate - Web Architectures Project</span>
+        <span class="footer-note">⭐ Hasira</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
